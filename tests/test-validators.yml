@@ -1,0 +1,7 @@
+- fail:
+    msg: message
+  when: etcd_scheme not in ["http", "https"]
+
+- fail:
+    msg: message
+  when: not etcd_config_dir | dirname

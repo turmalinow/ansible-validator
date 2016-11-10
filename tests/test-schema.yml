@@ -1,0 +1,21 @@
+---
+etcd_config_dir:
+  description: "some description"
+  default: /etc/etcd
+  checks:
+    - unix_path
+
+etcd_scheme:
+  description: "some description"
+  default: http
+  checks:
+    - choices:
+      - http
+      - https
+
+etcd_group_name:
+  description: "none"
+  default: "etcd"
+
+k8s_role_prefix:
+  description: "brak"
